@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+ <table class="table" style="margin-top: 10px">
+    <thead>
+    <tr>
+      <th scope="col">Symbol</th>
+      <th scope="col">Price</th>
+      <th scope="col">Stoks</th>
+      <th scope="col">Action</th>
+      <th scope="col">Date</th>
+    </tr>
+  </thead>
+    <tbody>
+    {% for transaction in transactions %}
+    <tr>
+      <td>{{transaction.symbol}}</td>
+      <td>{{transaction.price}}$</td>
+      <td>{{transaction.num_stocks}}</td>
+      <td>{{transaction.action}}</td>
+      <td>{{transaction.date}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

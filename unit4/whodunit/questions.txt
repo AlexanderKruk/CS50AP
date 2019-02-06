@@ -1,0 +1,13 @@
+0.  Library which contains integer data types
+1.  More flexible management of integer data types
+2.  BYTE - 1 byte, DWORD, LONG - 4 bytes , WORD - 2 bytes
+3.  0x42 0x4D
+4.  BfSize total size of file in bytes. BiSizeImage without header
+5.  The bitmap is a top-down DIB with the origin at the upper left corner.
+6.  biBitCount
+7.  Check for error in open files for read or write
+8.  We read 1 size of struct
+9.  3 bytes
+10. Move cursor to new position
+11. The current position of the cursor
+12. It was professor Plum with the candlestick with the library

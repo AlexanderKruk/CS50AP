@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <form action="/" method="post">
+            <input autocomplete="off" autofocus class="form-control" name="stock" placeholder="Stock" type="text"/>
+            <input autocomplete="off" autofocus class="form-control" name="num_stocks" placeholder="Number of stocks" type="number"/>
+        <button class="btn btn-primary" name="submit_button" type="submit" value="buy">Buy</button>
+        <button class="btn btn-primary" name="submit_button"type="submit" value="sell">Sell</button>
+    </form>
+    {% if stocks|length > 0 %}
+    <table class="table" style="margin-top: 10px">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Symbol</th>
+      <th scope="col">Stocks</th>
+      <th scope="col">Price</th>
+      <th scope="col">Cost</th>
+    </tr>
+  </thead>
+    <tbody>
+    {% for stock in stocks %}
+    <tr>
+      <th scope="row">{{stock.number}}</th>
+      <td>{{stock.symbol}}</td>
+      <td>{{stock.num_stocks}}</td>
+      <td>{{stock.cur_price | usd}}</td>
+      <td>{{stock.cost | usd}}$</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+  <div style="text-align: right">
+    IN STOCKS: {{ all_stocks | usd}}<br>
+    CASH: {{ cash | usd}}<br>
+{#    ALL MONEY: {{ all_cash | usd}}</p> #}
+  </div>
+{% endblock %}

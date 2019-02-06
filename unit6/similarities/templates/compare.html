@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <!-- Lefthand column -->
+    <div class="col-6">
+        <pre>{{ file1 | safe }}</pre>
+    </div>
+
+    <!-- Righthand column -->
+    <div class="col-6">
+        <pre>{{ file2 | safe }}</pre>
+    </div>
+
+{% endblock %}

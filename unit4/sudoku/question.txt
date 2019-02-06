@@ -1,0 +1,21 @@
+1. Strcmp(string1, string2) return 0 if string1 equals string2
+
+2. if ( strcmp(g.level, "debug") == 0)
+{
+    m = 9;
+}
+else
+{
+    m = 1024;
+}
+
+3. If your input matches the following
+[Optional spaces][decimal digits*][Optional spaces][any character][extra ignored]
+
+4.  int y, x;
+
+5.  void show_cursor(void)
+
+6. after 185
+
+7. Debug boards have same blank space as number and with same value like number.

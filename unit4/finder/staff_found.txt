@@ -1,0 +1,5 @@
+./cats.txt
+./staff_found.txt
+./cats.txt
+./this/is/cs50/hello.txt
+./finder.c

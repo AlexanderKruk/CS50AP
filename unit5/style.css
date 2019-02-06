@@ -1,0 +1,94 @@
+.header {
+    background-color: #E4BB97;
+    padding: 20px;
+    text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #584B53;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #9D5C63;
+    color: #f2f2f2;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #FEF5EF;
+}
+
+#google {
+    width: 150px;
+    float: left;
+    margin: 20px;
+}
+
+#bing {
+    width: 150px;
+    float: left;
+    margin: 20px;
+}
+
+#yandex {
+    width: 150px;
+    float: left;
+    margin: 20px;
+}
+
+p {
+    margin-bottom: 50px;
+    font: 15px verdana;
+}
+
+.right {
+    text-align: right;
+    margin-left:200px;
+}
+
+table {
+    margin: 20px;
+    border-collapse: collapse;
+    width: 60%;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+.top {
+    background-color: #9D5C63;
+    color: white;
+}
+
+#righttext {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: right;
+    margin-left: 500px;
+}
+
+ul {
+
+    position: relative;
+    left: 40%;
+}
+
+li {
+    display: inline;
+}
+
